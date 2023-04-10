@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/styles/text_styles.dart';
+import '../../../../utils/styles/text_styles.dart';
 
-class ProfileInfoWidget extends StatelessWidget {
+class UserPersonalInfo extends StatelessWidget {
   final String username;
   final String bio;
-  const ProfileInfoWidget({
+  const UserPersonalInfo({
     super.key,
     required this.username,
     required this.bio,

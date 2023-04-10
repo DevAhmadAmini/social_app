@@ -1,7 +1,7 @@
 import 'package:chat_app/utils/methods/showing_snackbar.dart';
 import 'package:flutter/material.dart';
 
-import 'package:chat_app/manage_state/user_info/user_notifier.dart';
+import 'package:chat_app/manage_state/state_notifier_provider/user_provider/user_notifier.dart';
 import 'package:chat_app/models/user.dart' as model;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'dart:io';

@@ -1,13 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '../../utils/methods/showing_snackbar.dart';
+import '../../../utils/methods/showing_snackbar.dart';
 
 class Profile {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   // logic of following or unfollowing someone
-  Future followOrUnfollowUser(userId, myId, List followers,context) async {
+  Future followOrUnfollowUser({userId, myId, List? followers,context}) async {
     try {
-      if (!followers.contains(myId)) {
+      if (!followers!.contains(myId)) {
         await _firestore.collection("users").doc(userId).update({
           "followers": FieldValue.arrayUnion([myId]),
         });

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/styles/container_decoration.dart';
-import '../../../utils/styles/text_styles.dart';
+import '../../../../utils/styles/container_decoration.dart';
+import '../../../../utils/styles/text_styles.dart';
 
 class ProfileRoundButton extends StatelessWidget {
   final String text;

@@ -1,4 +1,4 @@
-import 'package:chat_app/manage_state/user_info/update_user.dart';
+import 'package:chat_app/manage_state/state_notifier_provider/user_provider/update_user.dart';
 import 'package:chat_app/models/user.dart' as model;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

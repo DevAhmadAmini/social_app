@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // list of screens
   final screens = [
-    MyProfileScreen(),
+    const MyProfileScreen(),
     const FeedScreen(),
     const SearchUserScreen(),
     const UploadPost(),

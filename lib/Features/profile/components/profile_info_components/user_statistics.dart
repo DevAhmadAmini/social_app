@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/styles/text_styles.dart';
+import '../../../../utils/styles/text_styles.dart';
 
 class UserStatisticsWidget extends StatelessWidget {
   final String text;

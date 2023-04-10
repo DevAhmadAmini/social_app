@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:cached_network_image/cached_network_image.dart';
 
-import '../../profile/screens/profiles.dart';
+import '../../profile/screens/users_profile.dart';
 
 class UserTile extends StatelessWidget {
   final String text;

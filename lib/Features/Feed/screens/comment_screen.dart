@@ -22,13 +22,6 @@ class _CommentScreenState extends State<CommentScreen> {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   DateTime currentTime = DateTime.now();
 
-  Stream<QuerySnapshot> getStream() {
-    return _firestore
-        .collection("comments")
-        .where("postId", isEqualTo: widget.postId)
-        .snapshots();
-  }
-
   Future<void> postComment(username, avatarUrl) async {
     await Comments().addCommentDataToFirestore(
       // username and avatarUrl is currentUser's data which we get from our statemanagment
@@ -40,6 +33,13 @@ class _CommentScreenState extends State<CommentScreen> {
       postId: widget.postId,
       dateTime: currentTime,
     );
+  }
+
+  Stream<QuerySnapshot> getStream() {
+    return _firestore
+        .collection("comments")
+        .where("postId", isEqualTo: widget.postId)
+        .snapshots();
   }
 
   @override
